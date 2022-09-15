@@ -3,17 +3,20 @@
     <h2>Todo Manager Application</h2>
   </div>
   <div class="container">
+    <AddTodo/>
     <TodoItems />
   </div>
 </template>
 
 <script>
-import TodoItems from './components/Todos.vue'
+import TodoItems from './components/Todos.vue';
+import AddTodo from './components/AddTodo.vue';
 
 export default {
   name: 'App',
   components: {
     TodoItems,
+    AddTodo,
 }
 }
 </script>
